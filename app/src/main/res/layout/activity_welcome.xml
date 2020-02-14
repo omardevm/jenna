@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bgquizz">
+
+
+    <LinearLayout
+        android:id="@+id/info"
+        style="@style/button_quizz_start"
+        android:orientation="vertical">
+
+        <ImageView
+            android:layout_gravity="center"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/main_image" />
+
+        <TextView
+            android:id="@+id/txt_Start"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Esta es una beta pública para la plataforma de Tutorías"
+            android:textAlignment="center"
+            android:textColor="@color/gradient2"
+            android:textSize="12sp"
+            android:textStyle="bold" />
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/button_start"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/info"
+        android:text="Iniciar test"
+        android:textAppearance="@style/TextAppearance.AppCompat.Body1"/>
+    <!--com.google.android.material.button.MaterialButton
+        android:id="@+id/button_start"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/info"
+        android:text="Iniciar_test"
+        android:textAppearance="@style/TextAppearance.AppCompat.Body1" /-->
+
+    <ProgressBar
+        android:id="@+id/progressBarx"
+        style="?android:attr/progressBarStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/button_start"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:visibility="invisible" />
+
+
+</RelativeLayout>

@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <androidx.appcompat.widget.SearchView
+        android:id="@+id/search"
+        android:layout_width="match_parent"
+        android:background="@drawable/caja"
+        app:defaultQueryHint="@string/acceder"
+        android:layout_height="wrap_content"
+        android:layout_margin="15dp" />
+
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rvSearchUsuarios"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        tools:listitem="@layout/card_buscarusuario">
+    </androidx.recyclerview.widget.RecyclerView>
+
+    <LinearLayout
+        android:id="@+id/noUsuarioExistente"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:visibility="gone">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:srcCompat="@drawable/girl"
+            android:alpha="0.3"
+            android:contentDescription="@string/globalimagen"/>
+
+        <TextView
+            android:padding="15dp"
+            android:alpha="0.5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/lato_bold"
+            android:text="@string/mensaje_buscar"
+            android:textAlignment="center"
+            android:textSize="25sp" />
+    </LinearLayout>
+
+</LinearLayout>

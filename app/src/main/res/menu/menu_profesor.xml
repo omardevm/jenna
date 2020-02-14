@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+        android:id="@+id/grupo"
+        android:title="Mis grupos"/>
+
+    <item
+        android:id="@+id/soporte"
+        android:icon="@drawable/ic_soporte"
+        android:title="@string/soporte" />
+
+    <item
+        android:id="@+id/sesion"
+        android:title="@string/cerrar_sesion"/>
+</menu>

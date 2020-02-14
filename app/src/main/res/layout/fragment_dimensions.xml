@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:clipToPadding="false"
+    android:orientation="vertical"
+    android:padding="1dp">
+
+    <include layout="@layout/toolbar" />
+    <!-- futuro elemento del recyclerview-->
+    <include
+        android:id="@+id/container_dim_1"
+        layout="@layout/item_dimension_list" />
+
+    <include
+        android:id="@+id/container_dim_2"
+        layout="@layout/item_dimension_list" />
+
+    <include
+        android:id="@+id/container_dim_3"
+        layout="@layout/item_dimension_list" />
+
+</LinearLayout>

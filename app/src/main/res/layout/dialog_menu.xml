@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:id="@+id/container_factores_info"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:layout_marginStart="10dp"
+        android:background="@drawable/ic_chat"
+        android:orientation="vertical"
+        android:padding="30dp">
+
+        <TextView
+            android:id="@+id/txt_fac_info"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Factores" />
+
+        <TextView
+            android:id="@+id/txt_fac_info_contador"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="3"
+            android:textSize="25sp" />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/fac_button_start"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:backgroundTint="@color/colorAccent"
+            android:text="Empezar" />
+
+    </LinearLayout>
+
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/container_factores_info"
+        android:layout_centerHorizontal="true"
+        android:src="@drawable/heheayuwoki" />
+
+</RelativeLayout>
+
+    <!--
+    <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_chat"/>
+
+
+    -->

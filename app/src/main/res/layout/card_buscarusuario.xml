@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/card_solicitud"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        card_view:cardPreventCornerOverlap="false"
+        card_view:contentPadding="10sp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/fotoBuscador"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:src="@drawable/profile"/>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_gravity="center"
+                android:layout_weight="1">
+
+                <TextView
+                    android:id="@+id/nombreBuscador"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingStart="15dp"
+                    android:text="Jennyfer Gutierrez Hernandez"
+                    android:fontFamily="@font/lato_bold"
+                    android:textColor="#000000"
+                    android:textSize="16sp" />
+
+                <TextView
+                    android:id="@+id/carreraBuscador"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingStart="15dp"
+                    android:text="Ingeniería Sistemas Computacionales"
+                    android:textColor="#5C5C5C"
+                    android:fontFamily="@font/lato"
+                    android:textSize="14sp" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:paddingTop="5dp"
+                    android:gravity="center">
+
+                    <TextView
+                        android:id="@+id/estadoNumero"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:paddingEnd="5dp"
+                        android:text="Estado"
+                        android:textColor="#5C5C5C"
+                        android:textSize="14sp"
+                        android:visibility="gone" />
+
+                    <Button
+                        android:id="@+id/botonEstado3"
+                        android:layout_width="110dp"
+                        android:layout_height="40dp"
+                        android:layout_marginEnd="5dp"
+                        android:fontFamily="@font/lato_bold"
+                        android:clickable="true"
+                        android:focusable="true"
+                        android:textColorHint="@color/white" />
+
+                    <Button
+                        android:id="@+id/enviarSolicitud"
+                        android:layout_width="110dp"
+                        android:layout_height="40dp"
+                        android:fontFamily="@font/lato_bold"
+                        android:clickable="true"
+                        android:focusable="true"
+                        android:textColorHint="@color/white" />
+
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+</LinearLayout>

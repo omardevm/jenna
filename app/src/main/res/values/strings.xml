@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">PITA</string>
+
+    <!-- Login -->
+    <string name="usuario">Usuario</string>
+    <string name="contraseña">Contraseña</string>
+    <string name="acceder">Acceder</string>
+    <string name="bienvenido">Bienvenido</string>
+    <string name="noCuenta">No tengo cuenta</string>
+    <string name="title_activity_inicio">Inicio</string>
+
+    <!--Registro-->
+    <string name="Registro">Nueva cuenta</string>
+    <string name="tipoUsuario">¿Quién eres?</string>
+    <string name="Profesor">Profesor</string>
+    <string name="Alumno">Alumno</string>
+    <string name="nombre">Nombre(s)</string>
+    <string name="paterno">Apellido paterno</string>
+    <string name="materno">Apellido materno</string>
+    <string name="FechaNAc">Nacimiento</string>
+    <string name="control">Número de control o RFC</string>
+    <string name="division">División</string>
+    <string name="semestre">Semestre</string>
+    <string name="correo">Correo electrónico</string>
+    <string name="crear">Crear mi cuenta</string>
+
+
+    <!--Drawer Layout-->
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="nav_header_title">Android Studio</string>
+    <string name="nav_header_subtitle">android.studio@android.com</string>
+    <string name="nav_header_desc">Navigation header</string>
+    <string name="action_settings">Settings</string>
+
+    <!-- Menu drawer layout-->
+    <string name="inicio">Inicio</string>
+    <string name="perfil">Mi perfil</string>
+    <string name="buzon">Buzón de correo</string>
+    <string name="manual">Manual del SNIT</string>
+    <string name="actividades">Centro de actividades</string>
+    <string name="asesorias">Asesorías recomendadas</string>
+    <string name="departamentos">Departamentos ITESCO</string>
+    <string name="foro_discusion">Foro de discusión</string>
+    <string name="soporte">Ayuda</string>
+    <string name="cerrar_sesion">Cerrar sesión</string>
+
+    <!-- Inicio-->
+    <string name="popupA_Titulo">PITA es una nueva herramienta poderosa</string>
+    <string name="popupA_cuerpo">Nos da gusto anunciarte de la plataforma, que convertirá tus tareas en una forma más sencilla
+        de entregarla, en donde quieras que encuentres</string>
+    <string name="boton_popup">Entendido</string>
+
+    <!-- Perfil-->
+    <string name="informaci_n_personal">Información Personal</string>
+    <string name="ap">Apellido Paterno:</string>
+    <string name="am">Apellido Materno:</string>
+    <string name="fn">Fecha de Nacimiento:</string>
+    <string name="se">Semestre:</string>
+    <string name="co">Matricula:</string>
+    <string name="c">Correo:</string>
+    <string name="nombre_s">Nombre/s:</string>
+    <string name="mostrar_contrase_a">Mostrar contraseña</string>
+
+    <!-- Manual-->
+    <string name="button">Descargar</string>
+    <string name="texto">Una herramienta de trabajo para conducir el aprendizaje del estudiante, ya sea
+        individual o grupal, que contiene las indiciaciones y formatos de los ejercicios de cada sesion y anexos
+        con los instrumentos que se utilizarán a lo largo de las sesiones tutoriales</string>
+    <string name="SNIT">Sistema Nacional de Institutos Tecnologicos (SNIT)</string>
+
+    <!--Buzon de corre-->
+    <string name="leyenda">Escribe un mensaje...</string>
+    <string name="globalimagen">imagen</string>
+    <string name="mensaje_solicitud">¡Qué pena! aún no tienes solicitudes</string>
+    <string name="mensaje_buscar">¡Upss! creo que no existe este amigo</string>
+    <string name="mensaje_amigos">Empieza agregando a nuevos amigos</string>
+
+    <!-- AsesoriasAtributos -->
+    <string name="TitleAse">Asesorías Recomendadas</string>
+    <string name="asesoriaTitle">Te damos un empujoncito para que continues con tu meta de estudios</string>
+    <string name="test">Beta test</string>
+    <string name="res">Resultado test</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="resultados_test">Resultados Test</string>
+
+
+</resources>

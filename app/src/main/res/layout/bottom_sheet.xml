@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout
+    app:layout_behavior="com.google.android.material.bottomsheet.BottomSheetBehavior"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    app:behavior_peekHeight="?android:attr/actionBarSize"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/pantone7420"
+    android:layout_height="wrap_content"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    app:behavior_hideable="true"
+    android:id="@+id/bottom"
+    android:paddingLeft="16dp"
+    android:paddingRight="16dp">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="56dp"
+        android:textSize="16sp"
+        android:textColor="@color/white"
+        android:fontFamily="@font/lato_bold"
+        android:gravity="center_vertical"
+        android:text="Foto de perfil" />
+
+    <!-- Galeria -->
+    <LinearLayout
+        android:id="@+id/galeria"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:orientation="horizontal"
+        android:background="?attr/selectableItemBackground"
+        android:gravity="center_vertical"
+        android:focusable="true"
+        android:clickable="true">
+
+        <ImageView
+            app:srcCompat="@drawable/galeria"
+            android:tint="@color/white"
+            android:layout_width="24dp"
+            android:layout_height="24dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="16sp"
+            android:textColor="@color/white"
+            android:fontFamily="@font/lato"
+            android:text="Galería"
+            android:layout_marginStart="32dp"/>
+
+    </LinearLayout>
+
+    <!-- Camara -->
+    <LinearLayout
+        android:id="@+id/camara"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:orientation="horizontal"
+        android:background="?attr/selectableItemBackground"
+        android:gravity="center_vertical"
+        android:focusable="true"
+        android:clickable="true">
+
+        <ImageView
+            app:srcCompat="@drawable/camara"
+            android:tint="@color/white"
+            android:layout_width="24dp"
+            android:layout_height="24dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="16sp"
+            android:fontFamily="@font/lato"
+            android:textColor="@color/white"
+            android:text="Camára"
+            android:layout_marginStart="32dp"/>
+
+    </LinearLayout>
+
+</LinearLayout>

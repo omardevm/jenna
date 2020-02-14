@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FF4081</color>
+    <color name="white">#FFFFFF</color>
+    <color name="colorTransparent">#80FFFFFF</color>
+    <color name="colorBoton">#27AE60</color>
+    <color name="colorBotonSombra">#1B8046</color>
+    <color name="colorgris">#95a5a6</color>
+    <color name="colorgrisSombra">#7f8c8d</color>
+    <color name="colorBlack">#000000</color>
+    <color name="gradient1">#3F51B5</color>
+    <color name="gradient2">#2196F3</color>
+    <color name="colorWhite">#FFFFFF</color>
+    <color name="colorGray">#686868</color>
+    <color name="pantone504">#4E232E</color>
+    <color name="pantone490">#56242A</color>
+    <color name="pantone465">#B38E5D</color>
+    <color name="pantone468">#D4C19C</color>
+    <color name="pantone7421">#621132</color>
+    <color name="pantone7421A">#805466</color>
+    <color name="pantone7420">#9D2449</color>
+
+
+    <color name="separatorColor">#18102C</color>
+
+    <color name="pink">#FF308E</color>
+    <color name="orange">#FA9301</color>
+    <color name="yellow">#F8D411</color>
+    <color name="blue">#20CBF3</color>
+    <color name="purple">#6F26FA</color>
+    <color name="green">#49CC56</color>
+    <color name="red">#DC143C</color>
+
+
+</resources>

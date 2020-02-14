@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".BuzonDeCorreo.Amigos.SolicitudAmigos">
+
+   <androidx.recyclerview.widget.RecyclerView
+       android:id="@+id/rvsolicitud"
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       tools:listitem="@layout/card_solicitud">
+   </androidx.recyclerview.widget.RecyclerView>
+
+    <LinearLayout
+        android:id="@+id/noSolicitud"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:visibility="gone">
+
+        <ImageView
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            app:srcCompat="@drawable/solicitud"
+            android:alpha="0.3"
+            android:contentDescription="@string/globalimagen"/>
+
+        <TextView
+            android:padding="15dp"
+            android:alpha="0.5"
+            android:layout_width="wrap_content"
+            android:fontFamily="@font/lato"
+            android:layout_height="wrap_content"
+            android:text="@string/mensaje_solicitud"
+            android:textAlignment="center"
+            android:textSize="25sp" />
+    </LinearLayout>
+
+</LinearLayout>

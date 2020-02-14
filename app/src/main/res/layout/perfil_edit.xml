@@ -1,0 +1,428 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <com.google.android.material.appbar.AppBarLayout
+            android:id="@+id/appBarLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/pantone7421">
+
+            <androidx.appcompat.widget.Toolbar
+                android:id="@+id/toolbar"
+                android:elevation="0dp"
+                app:titleTextColor="@color/colorTransparent"
+                android:layout_width="match_parent"
+                android:layout_height="?attr/actionBarSize"
+                app:navigationIcon="@drawable/ic_back" />
+        </com.google.android.material.appbar.AppBarLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/guideline"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_constraintGuide_percent="0.052083332" />
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/guideline2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_constraintGuide_percent="0.9557292" />
+
+        <View
+            android:id="@+id/view"
+            android:layout_width="0dp"
+            android:layout_height="103dp"
+            android:layout_marginTop="70dp"
+            android:background="@color/pantone7421"
+            app:layout_constraintEnd_toStartOf="@+id/guideline2"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="@+id/guideline"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/fotoEdit"
+            android:layout_width="0dp"
+            android:layout_height="108dp"
+            app:layout_constraintBottom_toTopOf="@+id/view"
+            android:contentDescription="@string/globalimagen"
+            app:layout_constraintDimensionRatio="w,1:1"
+            app:layout_constraintEnd_toStartOf="@+id/guideline2"
+            app:layout_constraintStart_toStartOf="@+id/guideline"
+            app:layout_constraintTop_toTopOf="@+id/view" />
+
+        <TextView
+            android:id="@+id/key_division"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="8dp"
+            android:text="@string/informaci_n_personal"
+            android:textColor="@android:color/white"
+            android:textSize="22sp"
+            android:fontFamily="@font/lato_bold"
+            app:layout_constraintEnd_toEndOf="@+id/fotoEdit"
+            app:layout_constraintStart_toStartOf="@+id/fotoEdit"
+            app:layout_constraintTop_toBottomOf="@+id/fotoEdit" />
+
+            <LinearLayout
+                android:id="@+id/linear"
+                android:layout_marginTop="10dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:paddingEnd="15dp"
+                android:paddingStart="15dp"
+                app:layout_constraintEnd_toStartOf="@+id/guideline2"
+                app:layout_constraintTop_toBottomOf="@+id/view"
+                app:layout_constraintBottom_toBottomOf="@+id/view2">
+
+                <TextView
+                    android:id="@+id/textView5"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/lato"
+                    android:text="Guardar cambios"
+                    android:textSize="18sp" />
+
+
+                <ImageView
+                    android:id="@+id/saveInfo"
+                    android:contentDescription="@string/globalimagen"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="10dp"
+                    android:src="@drawable/ic_save"
+                    android:tint="@color/colorGray"
+                    tools:ignore="MissingConstraints" />
+
+            </LinearLayout>
+
+
+        <View
+            android:id="@+id/view2"
+            android:layout_width="0dp"
+            android:layout_height="2dp"
+            android:layout_marginTop="10dp"
+            android:fontFamily="@font/lato"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/linear" />
+
+        <LinearLayout
+            app:layout_constraintStart_toStartOf="@+id/guideline"
+            app:layout_constraintTop_toTopOf="@+id/view2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingTop="5dp"
+            android:paddingBottom="22dp"
+            android:orientation="vertical"
+            android:layout_marginRight="16dp"
+            android:layout_marginLeft="16dp">
+
+            <!-- Nombre-->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="18sp"
+                    android:fontFamily="@font/lato"
+                    android:textColor="@color/pantone7421"
+                    android:text="Nombre(s)"/>
+
+                <EditText
+                    android:id="@+id/edit_nombre"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/lato"
+                    android:inputType="textMultiLine"
+                    android:scrollbars="vertical"
+                    android:imeOptions="actionNext"
+                    android:paddingStart="16dp"
+                    android:paddingEnd="16dp" />
+            </LinearLayout>
+
+            <!-- Apellido Paterno-->
+            <LinearLayout
+                android:layout_marginTop="5dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="18sp"
+                    android:fontFamily="@font/lato"
+                    android:textColor="@color/pantone7421"
+                    android:text="Apellido Paterno"/>
+
+                <EditText
+                    android:id="@+id/edit_paterno"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/lato"
+                    android:imeOptions="actionNext"
+                    android:inputType="text"
+                    android:scrollbars="vertical"
+                    android:paddingStart="16dp"
+                    android:paddingEnd="16dp"/>
+            </LinearLayout>
+
+            <!-- Apellido Materno-->
+            <LinearLayout
+                android:layout_marginTop="5dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="18sp"
+                    android:fontFamily="@font/lato"
+                    android:textColor="@color/pantone7421"
+                    android:text="Apellido Materno"/>
+
+                <EditText
+                    android:id="@+id/edit_materno"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/lato"
+                    android:inputType="text"
+                    android:scrollbars="vertical"
+                    android:imeOptions="actionNext"
+                    android:paddingStart="16dp"
+                    android:paddingEnd="16dp" />
+            </LinearLayout>
+
+            <!-- Fecha de nacimiento-->
+            <LinearLayout
+                android:layout_marginTop="5dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="18sp"
+                    android:fontFamily="@font/lato"
+                    android:textColor="@color/pantone7421"
+                    android:text="Fecha de Nacimiento"/>
+
+                <EditText
+                    android:id="@+id/edit_fecha"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/lato"
+                    android:imeOptions="actionNext"
+                    android:inputType="text"
+                    android:scrollbars="vertical"
+                    android:paddingStart="16dp"
+                    android:paddingEnd="16dp"/>
+            </LinearLayout>
+
+            <!-- Division-->
+            <LinearLayout
+                android:layout_marginTop="5dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="18sp"
+                    android:fontFamily="@font/lato"
+                    android:textColor="@color/pantone7421"
+                    android:text="Division"/>
+
+                <androidx.appcompat.widget.AppCompatSpinner
+                    android:id="@+id/edit_division"
+                    android:layout_width="match_parent"
+                    android:imeOptions="actionNext"
+                    android:layout_height="45dp"
+                    android:focusable="true"
+                    android:fontFamily="@font/lato"
+                    android:paddingLeft="12dp"
+                    android:popupBackground="@drawable/caja"
+                    android:spinnerMode="dialog" />
+            </LinearLayout>
+
+            <!-- Semestre-->
+            <LinearLayout
+                android:layout_marginTop="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="18sp"
+                    android:fontFamily="@font/lato"
+                    android:textColor="@color/pantone7421"
+                    android:text="Semestre"/>
+
+                <androidx.appcompat.widget.AppCompatSpinner
+                    android:id="@+id/edit_semestre"
+                    android:layout_width="match_parent"
+                    android:layout_height="45dp"
+                    android:imeOptions="actionNext"
+                    android:focusable="true"
+                    android:fontFamily="@font/lato"
+                    android:popupBackground="@drawable/caja"
+                    android:paddingStart="12dp"
+                    android:spinnerMode="dialog" />
+            </LinearLayout>
+
+            <!-- Matricula-->
+            <LinearLayout
+                android:layout_marginTop="5dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="18sp"
+                    android:fontFamily="@font/lato"
+                    android:textColor="@color/pantone7421"
+                    android:text="Matricula"/>
+
+                <EditText
+                    android:id="@+id/edit_matricula"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/lato"
+                    android:imeOptions="actionNext"
+                    android:inputType="text"
+                    android:scrollbars="vertical"
+                    android:paddingStart="16dp"
+                    android:paddingEnd="16dp" />
+            </LinearLayout>
+
+            <!-- correo-->
+            <LinearLayout
+                android:layout_marginTop="5dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="18sp"
+                    android:fontFamily="@font/lato"
+                    android:textColor="@color/pantone7421"
+                    android:text="correo"/>
+
+                <EditText
+                    android:id="@+id/edit_correo"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/lato"
+                    android:inputType="textMultiLine"
+                    android:imeOptions="actionDone"
+                    android:scrollbars="vertical"
+                    android:paddingStart="16dp"
+                    android:paddingEnd="16dp" />
+            </LinearLayout>
+
+            <!--Tipo de usuario
+            <LinearLayout
+                android:layout_marginTop="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="18sp"
+                    android:fontFamily="@font/lato"
+                    android:textColor="@color/pantone7421"
+                    android:text="Soy un..."/>
+                
+                <RadioGroup
+                    android:id="@+id/tipo_usuario"
+                    android:orientation="horizontal"
+                    android:layout_gravity="center"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+
+                    <RadioButton
+                        android:id="@+id/edit_tipoUsuarioProfesor"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:buttonTint="@color/pantone465"
+                        android:layout_marginEnd="20dp"
+                        android:onClick="onRadioButton"
+                        android:fontFamily="@font/lato"
+                        android:text="Profesor"/>
+
+                    <RadioButton
+                        android:id="@+id/edit_tipoUsuarioEstudiante"
+                        android:layout_width="wrap_content"
+                        android:layout_marginStart="20dp"
+                        android:onClick="onRadioButton"
+                        android:fontFamily="@font/lato"
+                        android:text="Estudiante"
+                        android:layout_height="wrap_content"
+                        android:buttonTint="@color/pantone465"/>
+
+                </RadioGroup>
+
+
+            </LinearLayout-->
+
+            <EditText
+                android:id="@+id/id"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:visibility="gone"/>
+
+        </LinearLayout>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+    </ScrollView>
+</LinearLayout>
